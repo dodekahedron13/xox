@@ -214,9 +214,9 @@ $(function () {
         $(this).find('i').addClass('fa fa-times');            
     });    
     
-    $('.box').click( function() { // DOCUMENT YAP   
-        if ( this.dataset.click ) {
-            return;
+    $('.box').click( function() { // document   
+        if ( !!this.dataset.click ) {
+            return 0;
         } 
         if ( window.sayac == 9 ) {
             alert('Beraberlik');
