@@ -6,7 +6,9 @@ $(function () {
         [],[],[],
     ];
     var player1 = prompt('Player 1:');
-    player1 = player1 === '' ? 'Player 1': player1.replace(' ', '');           
+    player1 = player1 === '' 
+        ? 'Player 1' 
+        : player1.replace(' ', '');           
      
     $('.players1-turn').prop('hidden', false);
     $('#player1').html(player1 + '<i class="fa fa-close ml-1" id="sirax"></i>');
@@ -18,7 +20,9 @@ $(function () {
         [],[],[],
     ];
     var player2 = prompt('Player 2:');
-    player2 = player2 === '' ? 'Player 2': player2.replace(' ', '');    
+    player2 = player2 === '' 
+        ? 'Player 2' 
+        : player2.replace(' ', '');    
     $('.players2-turn').prop('hidden', false);
     $('#player2').html(player2  + ' <span id="sirao">O</span>');
     $('#player2').addClass('text-warning');
