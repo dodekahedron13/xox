@@ -59,7 +59,7 @@ $(function () {
 
         window.sayac = 0;
         */
-        window.location.reload();
+        return window.location.reload();
     }
 
      function isaretciTemizle() {        
@@ -193,11 +193,11 @@ $(function () {
         }        
         if ( this.dataset.click ) {
             $(this).attr('data-click','noclick');
-            return;
+            return 0;
         }              
         if ( window.sayac % 2 == 1 ) {
             $(this).find('i').removeClass().addClass('fa fa-opera').css('opacity','1');                     
-            return;
+            return 0;
         }         
         $(this).find('i').removeClass().addClass('fa fa-times').css('opacity','1');
     });
@@ -291,7 +291,7 @@ $(function () {
     });
 
     $('#sifirla').click( function(){
-        window.location.reload();
+        return window.location.reload();
     });
 
 });
